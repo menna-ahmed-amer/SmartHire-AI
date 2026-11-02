@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Employer | HireSense AI</title><link rel="stylesheet" href="styles.css" /></head>
+<body>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <header class="nav-shell"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>HireSense AI</span></a><nav class="nav-links"><a href="index.html">Home</a><a href="jobseeker.html">Job Seeker</a><a class="active" href="employer.html">Employer</a><a href="methodology.html">Methodology</a></nav><a class="nav-cta" href="#employerDemo">Employer Mode</a></header>
+  <main>
+    <section class="page-hero reveal"><span class="eyebrow compact"><span></span> employer mode</span><h1>Rank candidates with AI-powered CV matching.</h1><p>Paste a job description, upload candidate CVs, and receive a ranked shortlist with match scores and skill insights.</p></section>
+    <section class="workspace-grid employer-layout reveal delay-1" id="employerDemo">
+      <form class="control-panel wide" id="employerForm"><h2>Job Requirements</h2><label>Job Title<input type="text" placeholder="e.g. HR Specialist" value="HR Specialist" /></label><label>Job Description<textarea placeholder="Paste the job description here...">We are looking for an HR Specialist with experience in recruitment, onboarding, employee relations, HR policies, and communication skills.</textarea></label><label class="upload-box compact-upload"><input id="multiCvs" type="file" accept="application/pdf" multiple /><span class="upload-icon">⇧</span><b>Upload Candidate CVs</b><small id="multiFileName">No files selected</small></label><button class="btn primary full" type="submit">Rank Candidates</button></form>
+      <aside class="insight-panel"><div class="insight-header"><span>Shortlist Health</span><b id="candidateStatus">Ready</b></div><div class="big-score" id="candidateScore">--%</div><p id="candidateSummary">Candidate ranking summary will appear after running the demo.</p><div class="mini-stat-grid"><div><b>CV Parsing</b><span>PDF</span></div><div><b>Ranking</b><span>Cosine similarity</span></div></div></aside>
+    </section>
+    <section class="match-guide-section employer-guide reveal delay-1" aria-label="Candidate match categories guide">
+      <div class="match-guide-head">
+        <span class="eyebrow compact"><span></span> candidate match guide</span>
+        <h2>How the AI classifies shortlisted candidates.</h2>
+      </div>
+      <div class="match-guide-grid">
+        <article class="match-guide-card">
+          <div class="guide-top"><span class="guide-badge green">Highly Recommended</span><strong>85%+</strong></div>
+          <p>Excellent CV alignment with the job description, required skills, and responsibilities.</p>
+          <div class="progress-track"><span class="progress-fill high"></span></div>
+        </article>
+        <article class="match-guide-card">
+          <div class="guide-top"><span class="guide-badge blue">Good Match</span><strong>70%+</strong></div>
+          <p>Good candidate fit with a few missing skills or experience gaps.</p>
+          <div class="progress-track"><span class="progress-fill good"></span></div>
+        </article>
+        <article class="match-guide-card">
+          <div class="guide-top"><span class="guide-badge amber">Weak Match</span><strong>&lt; 60%</strong></div>
+          <p>Low candidate fit because important skills or experience are missing.</p>
+          <div class="progress-track"><span class="progress-fill weak"></span></div>
+        </article>
+      </div>
+    </section>
+    <section class="results-shell hidden" id="candidateResults"><div class="results-head"><h2>Ranked Candidates</h2><span>Demo results</span></div><div class="cards-list" id="candidateList"></div></section>
+  </main><footer>© 2026 HireSense AI</footer><script src="script.js"></script>
+</body></html>

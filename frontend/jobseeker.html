@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Job Seeker | HireSense AI</title><link rel="stylesheet" href="styles.css" /></head>
+<body>
+  <div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <header class="nav-shell"><a class="brand" href="index.html"><span class="brand-mark">H</span><span>HireSense AI</span></a><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="jobseeker.html">Job Seeker</a><a href="employer.html">Employer</a><a href="methodology.html">Methodology</a></nav><a class="nav-cta" href="#jobseekerDemo">Job Seeker Mode</a></header>
+  <main>
+    <section class="page-hero reveal"><span class="eyebrow compact"><span></span> job seeker mode</span><h1>Upload your CV. Discover your best-fit jobs.</h1><p>Get AI-ranked job recommendations, skill match rate, and missing skills based on your resume.</p></section>
+    <section class="workspace-grid reveal delay-1" id="jobseekerDemo">
+      <form class="control-panel" id="jobseekerForm">
+        <h2>CV Analysis</h2><p>Upload a PDF resume and choose optional preferences for the demo.</p>
+        <label class="upload-box"><input id="cvFile" type="file" accept="application/pdf" /><span class="upload-icon">⇧</span><b>Upload CV PDF</b><small id="cvFileName">No file selected</small></label>
+        <div class="form-grid"><label>Work Type<select><option>Any</option><option>Remote</option><option>Hybrid</option><option>Onsite</option></select></label><label>Experience<select><option>Any</option><option>Entry Level</option><option>Mid Level</option><option>Senior</option></select></label></div>
+        <button class="btn primary full" type="submit">Find Best Jobs</button>
+      </form>
+      <aside class="insight-panel"><div class="insight-header"><span>AI Insight</span><b id="bestTitle">Waiting for CV</b></div><div class="big-score" id="jobScore">--%</div><p id="jobSummary">Your CV analysis summary will appear here after running the demo.</p><div class="chips"><span>Semantic NLP</span><span>Skill Gap</span><span>Top 10 Jobs</span></div></aside>
+    </section>
+    <section class="results-shell hidden" id="jobResults"><div class="results-head"><h2>Recommended Jobs</h2><span>Demo results</span></div><div class="table-wrap"><table><thead><tr><th>Rank</th><th>Job Title</th><th>Company</th><th>Match</th><th>Required Skills</th><th>Missing Skills</th></tr></thead><tbody id="jobTable"></tbody></table></div></section>
+  </main><footer>© 2026 HireSense AI</footer><script src="script.js"></script>
+</body></html>
