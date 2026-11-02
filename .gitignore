@@ -1,0 +1,30 @@
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Sensitive / large downloaded datasets (see README for Kaggle sources)
+Job Dataset/
+Resume Dataset/
+job_descriptions.csv
+Jobs.csv
+Companies.csv
+*.rar
+*.7z
+*.tar.gz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Uploaded CVs and local app files
+backend/uploads/
+**/uploads/
